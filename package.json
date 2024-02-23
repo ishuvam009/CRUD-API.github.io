@@ -1,0 +1,23 @@
+{
+  "name": "crud-api.github.io",
+  "version": "1.0.0",
+  "description": "A simple CRUD API with Node.js, Express and MongoDB.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishuvam009/CRUD-API.github.io.git"
+  },
+  "author": "IShuvam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ishuvam009/CRUD-API.github.io/issues"
+  },
+  "homepage": "https://github.com/ishuvam009/CRUD-API.github.io#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.3"
+  }
+}
