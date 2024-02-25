@@ -5,14 +5,9 @@ app.use(express.json())
 require("./db")  //Connecting to the database.
 PORT = 3000;
 
-
-
 app.get('/', (req, res) => {
     res.send("Hello from server.");
 });
-
-
-
 
 //Post a product api.
 app.post('/api/products', async (req,res) => {
@@ -24,7 +19,6 @@ app.post('/api/products', async (req,res) => {
     }
 })
 
-
 //Get all products api
 app.get('/api/products',async (req,res) => {
     try {
@@ -34,7 +28,6 @@ app.get('/api/products',async (req,res) => {
         res.status(500).json({messafe: error.message})
     }
 })
-
 
 app.listen(PORT,() =>{
     console.log(`Server is running on port ${PORT}.`);
